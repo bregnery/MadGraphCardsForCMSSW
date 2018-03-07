@@ -36,6 +36,16 @@ Next, generate a gridpack using the desired data cards
 For example, 
 
     ./gridpack_generation.sh Radion_hh_WWWW_jets_narrow_M3500 cards/Radion_hh_WWWW_jets_narrow_M3500/
+
+### Using Cluster to Create Gridpacks
+
+To submit jobs on lxplus and store them locally, use the submit_gridpack_generation_local.sh
+
+    ./submit_gridpack_generation_local.sh <memory> <queue for master job> <name of process card without _proc_card.dat> <folder containing cards relative to current location> <queue>
+
+For example,
+
+    ./submit_gridpack_generation_local.sh 15000 2nw Radion_hh_WWWW_jets_narrow_M3500 cards/Radion_hh_WWWW_jets_narrow_M3500/ 8nh
  
 Creating/Editing Data Cards
 ---------------------------
